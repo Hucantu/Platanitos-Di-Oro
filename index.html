@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="autor" content="Humberto, Ana, Avril, Ariel, Oliver, Deisy"/>
+  <meta name="Descripcción" content="Este es nuestro proyecto final de la materia de páginass web"/>
+  <link rel="icon" type="image/vnd.icon" href="imagenes/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="inicio.css">
+    <title>Platanitos di oro</title>
+</head>
+<body>
+   <div class="container">
+    <div class="flip-card" id="flipCard">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+
+                <form id="loginForm"> 
+                    
+
+
+                    <h1 style="color: rgb(255, 255, 255); text-align: center;">Iniciar sesión</h1>
+                    <input type="text" id="username" placeholder="Usuario" required>
+                    <input type="password" id="password" placeholder="Contraseña" required>
+                    <div style="position: relative;">
+            <input type="checkbox" id="rememberPassword">
+            <label for="rememberPassword">Recordar contraseña</label>
+            <div class="password-toggle" onclick="togglePasswordVisibility()">
+                <i class="fas fa-eye" id="togglePassword" style="color: white;"></i>
+                        </div>
+                    </div>
+                    <button type="submit">Iniciar sesión</button> 
+                </form>
+                <span class="toggle-text" id="registerText">Registrarse</span>
+            </div>
+            <div class="flip-card-back">
+                <form id="registerForm">
+
+
+
+                    <h1 style="color: rgb(255, 255, 255); text-align: center;">Registro</h1>
+
+
+
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="text"id=userRr placeholder="Usuario" required>
+                    <input type="email" placeholder="Correo" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <button type="submit">Registrarse</button>
+                </form>
+                <span class="toggle-text" id="loginText">Volver al inicio de sesión</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
